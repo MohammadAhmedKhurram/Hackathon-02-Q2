@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Btn from "./Btn";
 import GeneralButton from "./Btn";
 
 export default function Herosec() {
@@ -13,13 +11,6 @@ export default function Herosec() {
         
       <div className="absolute ">
         <img src="/Herosec/image 32.png" alt="--" className="pl-[70px] w-[387px] h-[387px]"/>
-        {/* <Image
-          src="/Herosec/image 32.png"
-          alt="--"
-          width={387}
-          height={387}
-          className="pl-[70px]"
-        ></Image> */}
       </div>
 
       <div className="ml-[375px] mt-[203px] ">
