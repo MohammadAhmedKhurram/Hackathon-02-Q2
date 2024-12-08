@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    eslintIgnore: [
-      "**/app/components/**/*.ts",
-      "**/*.test.tsx",
-    ],
-  };
-  
-  module.exports = nextConfig;
-  
+export default {
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.txt$/,
+      use: 'raw-loader',
+    });
+    return config;
+  },
+};
