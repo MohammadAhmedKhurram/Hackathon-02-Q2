@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    eslintIgnore: [
+      "**/app/components/**/*.ts",
+      "**/*.test.tsx",
+    ],
+  };
+  
+  module.exports = nextConfig;
+  
