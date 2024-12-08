@@ -1,5 +1,5 @@
 import React from "react";
-import { CardProps, SecondCardProps } from "../types/cardcomptypes"; // Adjust the import path as necessary
+import { SecondCardProps } from "../types/cardcomptypes"; // Adjust the import path as necessary
 
 const TrendingProductsCardComp: React.FC<SecondCardProps> = ({
   image,
