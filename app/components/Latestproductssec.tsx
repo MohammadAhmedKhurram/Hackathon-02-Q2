@@ -4,7 +4,7 @@ export default function LatestProductSec() {
   return (
     <div className="ml-[371px] mr-[371px]">
 
-      <h1 className="text-[42px] flex justify-center mt-[71px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875]">
+      <h1 className="text-[42px] font-bold flex justify-center mt-[71px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875]">
         Leatest Products
       </h1>
       <ul className="flex gap-14 justify-center mt-[19px] text-[#151875]">

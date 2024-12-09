@@ -3,7 +3,7 @@ import ShopexCard from "./Shopixcard";
 export default function WhatShoppixOffer() {
   return (
     <div>
-      <h1 className="text-[42px] leading-[49.22px] text-left flex justify-center text-[#151875] mt-[51px]">
+      <h1 className="text-[42px] leading-[49.22px] text-left font-bold flex justify-center text-[#151875] mt-[51px]">
         What Shopex Offer
       </h1>
 

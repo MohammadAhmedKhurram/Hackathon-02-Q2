@@ -5,7 +5,7 @@ import TrendingProductsCardComp from "./TrendingprojectCardcomp";
 export default function TrendingProductsSec() {
   return (
     <div>
-      <h1 className="text-[42px] flex justify-center mt-[129px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875]">
+      <h1 className="text-[42px] font-bold flex justify-center mt-[129px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875]">
         Trending Products
       </h1>
       <div className="flex justify-center ml-[375px] mr-[375px] gap-16 mt-12">

@@ -3,8 +3,8 @@ import GeneralButton from "./Btn";
 
 export default function DiscountSec() {
   return (
-    <div className="ml-[375px] mr-[375px] mt-[129px] h-[100vh] ">
-      <h1 className="text-[42px] flex justify-center leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875]">
+    <div className="ml-[375px] mr-[375px] mt-[129px]">
+      <h1 className="text-[42px] font-bold flex justify-center leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875]">
         Discount Item
       </h1>
       <ul className="flex gap-14 justify-center mt-[19px] text-[#151875]">
@@ -13,7 +13,7 @@ export default function DiscountSec() {
         <li>Sofa Collection</li>
       </ul>
       <div className="">
-        <h1 className="text-[35px] flex mt-[88px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875] tracking-[0.015em] decoration-skip-ink-auto">
+        <h1 className="text-[35px] flex font-bold mt-[88px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875] tracking-[0.015em] decoration-skip-ink-auto">
           20% Discount Of All Products
         </h1>
         <h3 className="text-[21px] text-[#FB2E86] flex leading-[49.22px] text-left underline-offset-[0.1em]  tracking-[0.015em] decoration-skip-ink-auto">

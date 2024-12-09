@@ -31,7 +31,7 @@ export default function Navbar() {
       />
       
       {/* Centered Search Button */}
-      <button className="absolute right-2 top-1/2 font-bold transform -translate-y-1/2 bg-[#FB2E86] w-[51px] h-[30px] flex items-center justify-center">
+      <button className="absolute right-2 top-1/2 font-bold transform -translate-y-1/2 bg-[#FB2E86] w-[51px] h-[38px] flex items-center justify-center">
         <CiSearch className="w-6 h-7 text-white" />
       </button>
     </div>

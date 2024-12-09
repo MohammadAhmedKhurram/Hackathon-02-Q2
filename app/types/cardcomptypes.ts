@@ -12,4 +12,10 @@ export interface CardProps {
     price: string | number; // Price value
     originalPrice: number
   }
-  
+
+
+    export interface TopCateg {
+    image: string; // URL for the image
+    title: string; // Title text
+    price: string | number; // Price value
+  }

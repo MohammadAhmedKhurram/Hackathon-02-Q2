@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import "./globals.css";
 import { Josefin_Sans } from 'next/font/google';
 
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body     className= {`${josefinSans.className} m-0 p-0 border-0 box-border bg-white`}>
         {children}
+        <Footer/>
       </body>
     </html>
   );
