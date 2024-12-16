@@ -6,7 +6,7 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
 });
 
-export default function RecentPostCardBlog (props: Recentpostcardblog) {
+export default function RecentPostCardBlog (props: {img: string, heading: string}) {
     return (
         <div className="w-[250px] h-[51px] flex items-center">
               <img src={props.img} alt="--" className="w-[70px] h-[51px]"/>
