@@ -1,4 +1,4 @@
-export default function Cart(props: shoppingcart) {
+export default function Cart(props: {image: string, name: string, color: string, size: string, price: number, quantity: number, total: number}) {
   return (
     <div className="ml-[375px] max-w-[670px]">
       <div className="flex items-center gap-[17px]">
