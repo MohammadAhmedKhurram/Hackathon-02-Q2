@@ -6,7 +6,7 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
 });
 
-export default function BlogCardRoute (props:Blogcardroutetype) {
+export default function BlogCardRoute (props: {heading: string, img: string}) {
     return (
         <div
         className="w-[870px]">
