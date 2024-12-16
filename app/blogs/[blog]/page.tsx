@@ -12,7 +12,7 @@ const lato = Lato({
 
 export default function Blog({ params }: { params: { blog : string } }) {
 
-  let blogs = [
+  const blogs = [
     {
       name: "1",
       Name: "Mauris at orci non vulputate diam tincidunt nec.",

@@ -4,7 +4,6 @@ import { CiSearch } from "react-icons/ci";
 import RecentPostCardBlog from "../components/RecentPostBlogCard";
 import OfferProductBlogSecCard from "../components/OfferProductBlogSecCard";
 import Link from "next/link";
-import BlogCardSingle from "../components/blogCardSingle";
 import { Lato } from "next/font/google";
 
 
