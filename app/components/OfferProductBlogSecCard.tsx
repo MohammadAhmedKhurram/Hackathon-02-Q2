@@ -5,7 +5,7 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
 });
 
-export default function OfferProductBlogSecCard (props:Offerproductblogseccard) {
+export default function OfferProductBlogSecCard (props: {img: string, heading: string}) {
     return (
         <div className="w-[126px] h-[126px] flex flex-col items-center">
                 <img src={props.img} alt="--" className="h-[80px] w-full"/>
