@@ -12,7 +12,7 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
 });
 
-let name: string[] = ["1", "2", "3"]
+const name: string[] = ["1", "2", "3"]
 
 export default function Blogs() {
   return (
