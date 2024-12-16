@@ -1,4 +1,6 @@
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Topbanner from "./components/Topbanner";
 import "./globals.css";
 import { Josefin_Sans } from 'next/font/google';
 
@@ -16,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body     className= {`${josefinSans.className} m-0 p-0 border-0 box-border bg-white`}>
+        <Topbanner/>
+        <Navbar/>
         {children}
         <Footer/>
       </body>

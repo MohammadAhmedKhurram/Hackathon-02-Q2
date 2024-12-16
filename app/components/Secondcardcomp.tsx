@@ -21,9 +21,9 @@ const SecondCardComponent: React.FC<SecondCardProps> = ({ image, title, price, o
 
         {/* Price */}
         <div className="flex items-center gap-2">
-          <span className="text-[#151875] font-bold text-base">${price}</span>
+          <span className="text-[#151875] font-normal text-base">${price}</span>
           {originalPrice && (
-            <span className="text-red-500 line-through text-sm">${originalPrice}</span>
+            <span className="text-red-500 line-through font-normal text-sm">${originalPrice}</span>
           )}
         </div>
       </div>

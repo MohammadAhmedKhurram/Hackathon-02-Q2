@@ -17,7 +17,7 @@ const ThirdTrendingComp: React.FC<Thirdproductcomp> = ({ image, title, originalP
 
       {/* Right Side: Heading and Price */}
       <div className="flex-grow bg-white flex flex-col justify-center px-4">
-        <h2 className="text-[#151875] font-medium text-[14px]">{title}</h2>
+        <h2 className="text-[#151875] font-medium w-[151px] text-[14px]">{title}</h2>
         <span className="text-[#151875] text-[12px] line-through mt-1">${originalPrice}</span>
       </div>
     </div>

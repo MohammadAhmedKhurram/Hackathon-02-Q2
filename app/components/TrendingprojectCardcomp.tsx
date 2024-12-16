@@ -26,9 +26,9 @@ const TrendingProductsCardComp: React.FC<SecondCardProps> = ({
 
       {/* Price and Original Discounted Price - Centered in a new row */}
       <div className="w-full flex justify-center items-center  gap-2">
-        <span className="text-[#151875] font-bold text-base">${price}</span>
+        <span className="text-[#151875] font-semibold text-base">${price}.00</span>
         {originalPrice && (
-          <span className="text-[#1518754D] line-through text-sm">${originalPrice}</span>
+          <span className="text-[#1518754D] line-through text-sm">${originalPrice}.00</span>
         )}
       </div>
 

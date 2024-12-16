@@ -14,20 +14,20 @@ const CardComponent: React.FC<CardProps> = ({ image, title, code, price, boxColo
 </div>
 
       {/* Title */}
-      <h2 className="mt-4 text-lg font-semibold text-center">{title}</h2>
+      <h2 className="mt-4 text-lg font-semibold text-center text-[#FB2E86]">{title}</h2>
 
       {/* Colored Boxes */}
       <div className="flex justify-center gap-2 mt-2">
         {boxColors.slice(0, 3).map((color, index) => (
-          <div key={index} className={`w-[14px] h-[4px]`} style={{ backgroundColor: color }}></div>
+          <div key={index} className={`w-[14px] h-[4px] `} style={{ backgroundColor: color }}></div>
         ))}
       </div>
 
       {/* Code */}
-      <p className="mt-4 text-sm text-gray-500"> {code}</p>
+      <p className="mt-4 text-sm text-[#151875]"> {code}</p>
 
       {/* Price */}
-      <p className="mt-2 text-lg font-bold text-gray-800">${price}</p>
+      <p className="mt-2 text-lg font-bold text-[#151875]">${price}</p>
     </div>
   );
 };

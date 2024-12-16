@@ -10,7 +10,7 @@ Top Categories      </h1>
       <div className="flex justify-center ml-[375px] mr-[375px] gap-16 mt-12">
         <TopCategotiesCard
           image="/TopCateg/ad352f97e7cdd9b4848c0ae24630f6ae.png"
-          title="Cantilever chair"
+          title="Mini LCW Chair"
           price={26.0}
         />
         <TopCategotiesCard

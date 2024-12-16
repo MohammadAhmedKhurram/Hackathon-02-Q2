@@ -1,4 +1,12 @@
 import { FaPenNib, FaRegCalendarAlt } from "react-icons/fa";
+import { Lato } from "next/font/google";
+
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+});
+
 
 // Define the interface for Card props
 interface CardProps {
@@ -39,10 +47,10 @@ function Card({ image, author, date, title, description, subHeading }: CardProps
         <h2 className="text-lg font-bold text-[#151875]  mt-4">{title}</h2>
 
         {/* Description */}
-        <p className="text-[16px] font-normal text-[#72718F]  flex-grow mt-4">{description}</p>
+        <p className={`${lato.className} text-[16px] font-normal text-[#72718F]  flex-grow mt-4`}>{description}</p>
 
         {/* Subheading */}
-        <h3 className="text-md font-semibold text-[#FB2E86] underline">{subHeading}</h3>
+        <h3 className={`${lato.className} text-md font-semibold text-[#FB2E86] underline`}>{subHeading}</h3>
       </div>
     </div>
   );

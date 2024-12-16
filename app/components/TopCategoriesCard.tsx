@@ -25,7 +25,7 @@ const TopCategotiesCard: React.FC<TopCateg> = ({
 
       {/* Price and Original Discounted Price - Centered in a new row */}
       <div className="w-full flex justify-center items-center  gap-2">
-        <span className="text-[#151875] font-bold text-base">${price}</span>
+        <span className="text-[#151875] font-semibold text-base">${price}.00</span>
       </div>
 
     </div>
