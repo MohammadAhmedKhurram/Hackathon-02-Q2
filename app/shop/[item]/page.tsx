@@ -2,7 +2,7 @@ import Banner from "@/app/components/Banner";
 import ProductDetailComp from "@/app/components/ProductDetailComp";
 
 export default function Item ({ params }: { params: { item : string } }) {
-    let items = [
+    const items = [
         {
             id: "1",
             name: "Accumsan tincidunt",

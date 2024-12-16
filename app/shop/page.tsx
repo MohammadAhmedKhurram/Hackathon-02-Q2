@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 
 export default function Shop () {
 
-    let ids: string[] = ["1", "2", "3", "4", "5", "6", "7"]
+    const ids: string[] = ["1", "2", "3", "4", "5", "6", "7"]
 
     return (
         <div className="mb-[132px]">

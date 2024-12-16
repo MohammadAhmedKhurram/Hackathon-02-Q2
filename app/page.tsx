@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Banner from "./components/Banner";
 import BlogsSec from "./components/BlogsSec";
 import GeneralButton from "./components/Btn";
 import DiscountSec from "./components/DiscountSec";
