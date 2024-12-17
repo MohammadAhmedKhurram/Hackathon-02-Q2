@@ -6,12 +6,16 @@ export default function Navbar() {
   return (
     <div className="mt-[19px] mb-[19px] h-10 text-[#0D0E43] text-base font-semibold flex ml-[371px] mr-[371px] items-center">
       <div className="flex items-center">
+        <Link href="/">
         <h1 className="text-[34px] font-bold">Hekto</h1>
+        </Link>
         <ul className="flex ml-[85px] items-center gap-5">
         <div className="relative group ">
+          <Link href="/">
   <li className="text-base font-medium text-[#FB2E86] hover:text-blue-500 cursor-pointer px-4 py-2">
     Home
   </li>
+  </Link>
 
   <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
     <Link href="../about-us">
