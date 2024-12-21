@@ -6,4 +6,5 @@ export type Card = {
 
 export type GenButton = {
   title: string;
+ 
 };

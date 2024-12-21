@@ -3,7 +3,6 @@ import { TbBrandInstagramFilled } from "react-icons/tb";
 import { ImTwitter } from "react-icons/im";
 import { Lato } from "next/font/google";
 
-
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
@@ -12,18 +11,17 @@ const lato = Lato({
 export default function Footer() {
   return (
     <div>
-      <footer className="w-full h-[478px] bg-[#EEEFFB]">
+      <footer className="w-full lg:h-[478px] bg-[#EEEFFB] flex xl:justify-start gap-7 lg:gap[600px] xl:gap-[100px] xl:px-[310px] px-4 justify-center flex-wrap h-auto pb-[40px] lg:pb-0">
         {/* Footer with a custom CSS Grid layout */}
-        <div className="relative h-full">
+        <div className="flex flex-col mt-[92px]">
           {/* First Column */}
-          <div className="absolute top-[95px] left-[310px]">
-            <h2 className="text-black text-[38px] font-bold mb-4">Hekto</h2>
-            <div className={`${lato.className}`}>
+          <h2 className="text-black text-[38px] font-bold mb-4">Hekto</h2>
+          <div className={`${lato.className}`}>
             <div className="flex items-center mb-4">
               <input
                 type="text"
                 placeholder="Enter Email Address"
-                className="w-[200px] h-[40px] border-gray-300 px-3 text-sm outline-none"
+                className="w-[120px] md:w-[200px] h-[40px] border-gray-300 px-3 text-sm outline-none"
               />
               <button className="h-[40px] w-[135px] bg-[#FB2E86] text-white px-4">
                 Sign Up
@@ -33,15 +31,13 @@ export default function Footer() {
               <li>Contact Info</li>
               <li>17 Princess Road, London, Greater London NW1 8JR, UK</li>
             </ul>
-            </div>
           </div>
+        </div>
 
-          {/* Second Column */}
-          <div className="absolute top-[94px] left-[780px]">
-            <h2 className="text-black text-lg font-semibold mb-11">
-              Categories
-            </h2>
-            <div className={`${lato.className}`}>
+        {/* Second Column */}
+        <div className="flex flex-col mt-[94px]">
+          <h2 className="text-black text-lg font-semibold mb-11">Categories</h2>
+          <div className={`${lato.className}`}>
             <ul className="text-[#8A8FB9] text-sm space-y-4">
               <li>Laptops & Computers</li>
               <li>Cameras & Photography</li>
@@ -49,15 +45,15 @@ export default function Footer() {
               <li>Video Games & Consoles</li>
               <li>Waterproof Headphones</li>
             </ul>
-            </div>
           </div>
+        </div>
 
-          {/* Third Column */}
-          <div className="absolute top-[94px] left-[1047px]">
-            <h2 className="text-black text-lg font-semibold mb-11">
-              Customer Care
-            </h2>
-            <div className={`${lato.className}`}>
+        {/* Third Column */}
+        <div className="flex flex-col mt-[94px]">
+          <h2 className="text-black text-lg font-semibold mb-11">
+            Customer Care
+          </h2>
+          <div className={`${lato.className}`}>
             <ul className="text-[#8A8FB9] text-sm space-y-4">
               <li>My Account</li>
               <li>Discount</li>
@@ -65,13 +61,13 @@ export default function Footer() {
               <li>Orders History</li>
               <li>Order Tracking</li>
             </ul>
-            </div>
           </div>
+        </div>
 
-          {/* Fourth Column */}
-          <div className="absolute top-[94px] left-[1287px]">
-            <h2 className="text-black text-lg font-semibold mb-11">Pages</h2>
-            <div className={`${lato.className}`}>
+        {/* Fourth Column */}
+        <div className="flex flex-col mt-[94px]">
+          <h2 className="text-black text-lg font-semibold mb-11">Pages</h2>
+          <div className={`${lato.className}`}>
             <ul className="text-[#8A8FB9] text-sm space-y-4">
               <li>Blog</li>
               <li>Browse the Shop</li>
@@ -80,18 +76,22 @@ export default function Footer() {
               <li>Visual Composer Elements</li>
               <li>WooCommerce Pages</li>
             </ul>
-            </div>
           </div>
         </div>
       </footer>
-      <div className={`${lato.className} h-[53px]  bg-[#E7E4F8] flex justify-between items-center`}>
-        <p className="text-[#9DA0AE] ml-[275px] text-[16px] font-semibold">
-          ©Webecy - All Rights Reserved
-        </p>
-        <div className="flex gap-2 mr-[645px] bg-[#E7E4F8]">
-          <RiFacebookFill className="w-[19.42px] h-[19.42px]"/>
-          <TbBrandInstagramFilled className="w-[19.42px] h-[19.42px]"/>
-          <ImTwitter className="w-[19.42px] h-[19.42px]"/>
+
+      <div className="w-full bg-[#E7E4F8] flex justify-center items-center lg:block">
+        <div
+          className={`${lato.className} lg:ml-[50px] lg:mr-[500px] xl:ml-[275px] xl:mr-[645px] h-[53px] gap-3 bg-[#E7E4F8] flex justify-between items-center flex-wrap`}
+        >
+          <p className="text-[#9DA0AE]  text-xs lg:text-[16px] font-semibold">
+            ©Webecy - All Rights Reserved
+          </p>
+          <div className="flex gap-2  bg-[#E7E4F8]">
+            <RiFacebookFill className=" w-4 lg:w-[19.42px] h-4 lg:h-[19.42px]" />
+            <TbBrandInstagramFilled className="w-4 lg:w-[19.42px] h-4 lg:h-[19.42px]" />
+            <ImTwitter className="w-4 lg:w-[19.42px] h-4 lg:h-[19.42px]" />
+          </div>
         </div>
       </div>
     </div>

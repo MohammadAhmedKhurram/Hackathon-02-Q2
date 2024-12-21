@@ -33,29 +33,21 @@ export default function OrderCompleted() {
             when your order is completed.
           </p>
           <Link href="../shop">
-          <button
-            className={`${lato.className} bg-[#FB2E86] text-white border-2 mt-[10px] border-[#FB2E86] text-sm font-semibold tracking-[0.020em] rounded-[3px] cursor-pointer flex items-center justify-center h-[59px] w-[208px] text-[16px] leading-[30px] text-left`}
-          >
-            Continue Shopping
-          </button>
+            <button
+              className={`${lato.className} bg-[#FB2E86] text-white border-2 mt-[10px] border-[#FB2E86] text-sm font-semibold tracking-[0.020em] rounded-[3px] cursor-pointer flex items-center justify-center h-[59px] w-[208px] text-[16px] leading-[30px] text-left`}
+            >
+              Continue Shopping
+            </button>
           </Link>
         </div>
       </div>
 
-  {/* Image */}
-  <img
-    src="/checklist 1.png"
-    alt="--"
-    className="ml-[1483px] mt-[27px]"
-  />
+      
+      <img src="/checklist 1.png" alt="--" className="ml-[1483px] mt-[27px]" />
 
-<div className="w-full flex justify-center mt-[84px] mb-[84px]">
-  <img src="/image 1174.png" alt="-" />
-  </div>
-</div>
-
-      
-      
-      
+      <div className="w-full flex justify-center mt-[84px] mb-[84px]">
+        <img src="/image 1174.png" alt="-" />
+      </div>
+    </div>
   );
 }

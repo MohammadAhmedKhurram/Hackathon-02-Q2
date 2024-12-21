@@ -2,13 +2,12 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Topbanner from "./components/Topbanner";
 import "./globals.css";
-import { Josefin_Sans } from 'next/font/google';
+import { Josefin_Sans } from "next/font/google";
 
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "500", "600", "700"],
 });
-
 
 export default function RootLayout({
   children,
@@ -17,11 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body     className= {`${josefinSans.className} m-0 p-0 border-0 box-border bg-white`}>
-        <Topbanner/>
-        <Navbar/>
+      <body
+        className={`${josefinSans.className} m-0 p-0 border-0 box-border bg-white`}
+      >
+        <Topbanner />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

@@ -1,14 +1,11 @@
 import { FaPenNib, FaRegCalendarAlt } from "react-icons/fa";
 import { Lato } from "next/font/google";
 
-
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
 });
 
-
-// Define the interface for Card props
 interface CardProps {
   image: string;
   author: string;
@@ -18,12 +15,23 @@ interface CardProps {
   subHeading: string;
 }
 
-function Card({ image, author, date, title, description, subHeading }: CardProps) {
+function Card({
+  image,
+  author,
+  date,
+  title,
+  description,
+  subHeading,
+}: CardProps) {
   return (
     <div className="w-[370px] h-[493px]  ">
       {/* Image */}
       <div className="w-full h-[255px] overflow-hidden rounded-md">
-        <img src={image} alt="Card Image" className="w-full h-full object-cover" />
+        <img
+          src={image}
+          alt="Card Image"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Content Area */}
@@ -47,10 +55,18 @@ function Card({ image, author, date, title, description, subHeading }: CardProps
         <h2 className="text-lg font-bold text-[#151875]  mt-4">{title}</h2>
 
         {/* Description */}
-        <p className={`${lato.className} text-[16px] font-normal text-[#72718F]  flex-grow mt-4`}>{description}</p>
+        <p
+          className={`${lato.className} text-[16px] font-normal text-[#72718F]  flex-grow mt-4`}
+        >
+          {description}
+        </p>
 
         {/* Subheading */}
-        <h3 className={`${lato.className} text-md font-semibold text-[#FB2E86] underline`}>{subHeading}</h3>
+        <h3
+          className={`${lato.className} text-md font-semibold text-[#FB2E86] underline`}
+        >
+          {subHeading}
+        </h3>
       </div>
     </div>
   );

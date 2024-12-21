@@ -7,35 +7,32 @@ import Link from "next/link";
 
 export default function Topbanner() {
   return (
-    
-      <div className="h-11 flex justify-between items-center bg-[#7E33E0] text-[#F1F1F1] text-base font-semibold pl-[377px] pr-[377px]">
-
-        {/* Left Side */}
-        <div className="flex items-center gap-5">
-          <div className="flex items-center ">
-            <MdOutlineMailOutline className="w-[16px] h-[16px] mr-2" />
-            <p>mhhasannul@gmail.com</p>
-          </div>
-          <div className="flex items-center">
-            <FiPhoneCall className="w-[16px] h-[16px] mr-2"/>
-            <p>(12345)67890</p>
-          </div>
+    <div className="  h-11 flex justify-center md:justify-between items-center bg-[#7E33E0] text-[#F1F1F1] text-xs lg:text-base font-semibold md:pl-[50px] md:pr-[50px] xl:pl-[200px] xl:pr-[200px] 2xl:pl-[377px] 2xl:pr-[377px]">
+      {/* Left Side */}
+      <div className="hidden md:flex items-center gap-[2px] sm:gap-1 md:gap-2 lg:gap-5 ">
+        <div className="flex items-center ">
+          <MdOutlineMailOutline className=" w-4 h-4 mr-1 lg:mr-2" />
+          <p>mhhasannul@gmail.com</p>
         </div>
+        <div className="flex items-center">
+          <FiPhoneCall className="w-4 h-4  mr-1 lg:mr-2" />
+          <p>(12345)67890</p>
+        </div>
+      </div>
 
-        {/* Right Side */}
-        <div className="flex items-center gap-6">
+      {/* Right Side */}
+      <div className="flex items-center gap-2 lg:gap-6">
+        <div className="flex items-center">
+          <div>English</div>
+          <RiArrowDropDownLine className=" w-4 h-4" />
+        </div>
+        <div className="flex items-center ">
+          <div>USD</div>
+          <RiArrowDropDownLine className="w-4 h-4" />
+        </div>
+        <Link href="../login">
           <div className="flex items-center">
-            <div>English</div>
-            <RiArrowDropDownLine className="w-4 h-4" />
-          </div>
-          <div className="flex items-center ">
-            <div>USD</div>
-            <RiArrowDropDownLine className="w-4 h-4" />
-          </div>
-          <Link href='../login'>
-          <div className="flex items-center">
-            
-            <div className="mr-1">Login</div>
+            <div className="mr-[2px]">Login</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -51,21 +48,18 @@ export default function Topbanner() {
               />
             </svg>
           </div>
+        </Link>
+
+        <div className="flex items-center ">
+          <div className=" mr-[2px]">Wishlist</div>
+          <CiHeart className="w-4 h-4" />
+        </div>
+        <div className="flex items-center ">
+          <Link href="../shopping-cart">
+            <BsCart2 className=" w-4 h-4" />
           </Link>
-
-          <div className="flex items-center ">
-              <div className="mr-1">Wishlist</div>
-              <CiHeart className="w-4 h-4" />
-            </div>
-          {/* Ensure Proper Center Alignment for Cart */}
-          <div className="flex items-center ">
-            <Link href="../shopping-cart">
-            <BsCart2 className="w-[17.5px] h-[17.5px]" />
-            </Link>
-          </div>
-
         </div>
       </div>
-    
+    </div>
   );
 }

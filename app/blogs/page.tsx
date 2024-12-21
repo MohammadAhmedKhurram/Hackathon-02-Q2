@@ -6,13 +6,12 @@ import OfferProductBlogSecCard from "../components/OfferProductBlogSecCard";
 import Link from "next/link";
 import { Lato } from "next/font/google";
 
-
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
 });
 
-const name: string[] = ["1", "2", "3"]
+const name: string[] = ["1", "2", "3"];
 
 export default function Blogs() {
   return (
@@ -24,7 +23,7 @@ export default function Blogs() {
         subheading="Blog Page"
       />
 
-      <div className="ml-[375px] mr-[375px] flex">
+      <div className=" flex flex-wrap md:ml-[50px] xl:ml-[200px] 2xl:ml-[275px] md:mr-[50px] xl:mr-[200px] 2xl:mr-[275px] overflow-hidden">
         <div className="mt-[125px]">
           <Link href={`/blogs/${name[0]}`}>
             <BlogCardRoute
@@ -33,18 +32,14 @@ export default function Blogs() {
             />
           </Link>
 
-          <Link
-            href={`/blogs/${name[1]}`}
-          >
+          <Link href={`/blogs/${name[1]}`}>
             <BlogCardRoute
               heading="Aenean vitae in aliquam ultrices lectus. Etiam."
               img="/bruce-mars-FWVMhUa_wbY-unsplash 2.png"
             />
           </Link>
 
-          <Link
-            href={`/blogs/${name[2]}`}
-          >
+          <Link href={`/blogs/${name[2]}`}>
             <BlogCardRoute
               heading="Sit nam congue feugiat nisl, mauris amet nisi."
               img="/bruce-mars-FWVMhUa_wbY-unsplash 3.png"
@@ -52,7 +47,7 @@ export default function Blogs() {
           </Link>
         </div>
 
-        <div className="mt-[125px] ml-[58px]">
+        <div className="mt-[125px] ml-[0px] 2xl:ml-[58px]">
           <h3 className="text-[22px] leading-[25.78px] text-left text-[#151875] font-semibold">
             Search
           </h3>
@@ -211,7 +206,9 @@ export default function Blogs() {
         </div>
       </div>
 
-      <div className={`${lato.className} flex ml-[688px] gap-[36px] mt-[50px]`}>
+      <div
+        className={`${lato.className} flex lg:ml-[688px] gap-[36px] mt-[50px] justify-center lg:justify-normal`}
+      >
         <div className="w-[32px] h-[24px] rounded-[2px] bg-[#FB2CA8] flex justify-center items-center text-white">
           1
         </div>
@@ -224,7 +221,6 @@ export default function Blogs() {
         <div className="w-[32px] h-[24px] rounded-[2px] border-[1px] border-[#E0D3F5] flex justify-center items-center text-[#E0D3F5]">
           4
         </div>
-        
       </div>
 
       <div className="w-full flex justify-center mt-[71px] mb-[112px]">

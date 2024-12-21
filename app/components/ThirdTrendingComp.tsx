@@ -1,10 +1,9 @@
 import React from "react";
 
-// Define Props Interface for Type Safety
 interface Thirdproductcomp {
-  image: string; // URL or path for the image
-  title: string; // Heading text
-  originalPrice: string; // Original price (cutted)
+  image: string; 
+  title: string; 
+  originalPrice: string; 
 }
 
 const ThirdTrendingComp: React.FC<Thirdproductcomp> = ({ image, title, originalPrice }) => {

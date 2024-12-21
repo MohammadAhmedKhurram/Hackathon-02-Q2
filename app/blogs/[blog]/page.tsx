@@ -10,8 +10,7 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
 });
 
-export default function Blog({ params }: { params: { blog : string } }) {
-
+export default function Blog({ params }: { params: { blog: string } }) {
   const blogs = [
     {
       name: "1",
@@ -30,29 +29,34 @@ export default function Blog({ params }: { params: { blog : string } }) {
     },
   ];
 
-  const selectedBlog = blogs.find(
-    (blog) => blog.name === params.blog
-  );
-  
-    if (!selectedBlog) {
-      return <div>Blog not found!</div>;
-    }
+  const selectedBlog = blogs.find((blog) => blog.name === params.blog);
 
-  return (   
+  if (!selectedBlog) {
+    return <div>Blog not found!</div>;
+  }
+
+  return (
     <div className="mb-[83px]">
-      <Banner title="Home" title2="Pages" heading="Single Blog" subheading="Single Blog"/>
+      <Banner
+        title="Home"
+        title2="Pages"
+        heading="Single Blog"
+        subheading="Single Blog"
+      />
 
+      <div className="flex flex-wrap md:ml-[50px] xl:ml-[200px] 2xl:ml-[275px] md:mr-[50px] xl:mr-[200px] 2xl:mr-[275px] overflow-hidden">
+        <div className="lg:w-[870px]">
+          <img
+            src={selectedBlog.Img}
+            alt="-"
+            className="w-full h-453px mt-[114px]"
+          />
 
-      <div className="ml-[375px] mr-[375px] flex">
-
-        <div className="w-[870px]">
-          <img src={selectedBlog.Img} alt="-" className="w-full h-453px mt-[114px]"/>
-
-          <div className="flex items-center justify-between w-[360px] mt-[27px]">
+          <div className="flex items-center justify-between lg:w-[360px] mt-[27px]">
             {/* Author */}
             <div className="flex items-center gap-2 text-[#151875]">
               <FaPenNib className="text-[#FB2E86] w-[11.33px] h-[11.33px]" />
-              <span className="font-medium w-[160px] h-[23px] text-sm bg-[#FFE7F9] flex justify-center items-center">
+              <span className="font-medium lg:w-[160px] lg:h-[23px] text-[10px] lg:text-sm bg-[#FFE7F9] flex justify-center items-center">
                 Surf Auxion
               </span>
             </div>
@@ -60,65 +64,108 @@ export default function Blog({ params }: { params: { blog : string } }) {
             {/* Date with Calendar Icon */}
             <div className="flex items-center gap-2 text-[#151875]">
               <FaRegCalendarAlt className="text-[#FFA454] w-[16px] h-[16px]" />
-              <span className="text-sm font-medium bg-[#FFECE2] w-[127px] h-[23px] flex justify-center items-center">
+              <span className="text-[10px] lg:text-sm font-medium bg-[#FFECE2] lg:w-[127px] lg:h-[23px] flex justify-center items-center">
                 Aug 09 2020
               </span>
             </div>
           </div>
-          <h3 className="text-[30px] text-[#151875] font-bold leading-[30px] text-left mt-[28px]">
+          <h3 className="text-[18px] lg:text-[30px] text-[#151875] font-bold leading-[30px] text-left mt-[28px]">
             {selectedBlog.Name}
           </h3>
           <p
-            className={` ${lato.className} text-[#8A8FB9] text-[16px] font-normal leading-[25.6px] text-left mt-[23px] mb-[0px]`}
+            className={` ${lato.className} text-[#8A8FB9] text-[12px] lg:text-[16px] font-normal leading-[25.6px] text-left mt-[23px] mb-[0px]`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
             facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu
             malesuada vitae ultrices in in neque, porta dignissim. Adipiscing
             purus, cursus vulputate id id dictum at.
           </p>
-          <p className={` ${lato.className} text-[#8A8FB9] text-[16px] font-normal leading-[25.6px] text-left mt-[50px] mb-[0px]`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
+          <p
+            className={` ${lato.className} text-[#8A8FB9] text-[12px] lg:text-[16px] font-normal leading-[25.6px] text-left mt-[50px] mb-[0px]`}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Velit dapibus est, nunc, montes, lacus consequat integer
+            viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec
+            vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Velit dapibus est, nunc,
           </p>
           <div className="w-full h-[141px] border-l-2 border-l-[#FC45A0] flex flex-col items-center justify-center mt-[43px]">
-            <p className="text-[18px] leading-[30px] text-left w-[832px] h-[88px] text-[#969CB4]">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat
-
-toamk risusu”</p>
-            </div>
-            <div className="flex justify-between w-full mt-[43px]">
-              <img src="/Rectangle 70.png" alt="--" className="w-[417.74px] h-[245px]"/> 
-              <img src="/Rectangle 71.png" alt="--" className="w-[417.74px] h-[245px]"/>
-            </div>
-            <p className={` ${lato.className} text-[#8A8FB9] text-[16px] font-normal leading-[25.6px] text-left mb-[23px] mt-[45px]`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
+            <p className="text-[14px] lg:text-[18px] leading-[30px] text-left lg:w-[832px] h-[88px] text-[#969CB4]">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+              dictum sapien, amet, consequat. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Commodo dictum sapien, amet,
+              consequat toamk risusu”
             </p>
-            
-            <div className="flex w-full justify-between mt-[51px]">
-          <img src="/Group 247.png" alt="--" />
-          <img src="/Group 248.png" alt="--" />
-          <img src="/Group 249.png" alt="--" />
-          <img src="/Group 250.png" alt="--" />
           </div>
-          <p className={` ${lato.className} text-[#8A8FB9] text-[16px] font-normal leading-[25.6px] text-left mt-[44px]`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
-          </p>
-          <p className={` ${lato.className} text-[#8A8FB9] text-[16px] font-normal leading-[25.6px] text-left w-[871px] mt-[32px]`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
-          </p>
-          
-          <div className="w-full flex justify-center mt-[59px]">
-          <img src="/Group 213.png" alt="--" />
+          <div className="flex justify-between lg:w-full mt-[43px] flex-wrap">
+            <img
+              src="/Rectangle 70.png"
+              alt="--"
+              className="w-[417.74px] h-[245px]"
+            />
+            <img
+              src="/Rectangle 71.png"
+              alt="--"
+              className="w-[417.74px] h-[245px]"
+            />
           </div>
-          <img src="/Group 264.png" alt="--" className="mt-[27px]"/>
-          <img src="/Group 78.png" alt="-" className="mt-[111px]"/>
-              <img src="/Group 79.png" alt="-"/>
-              <img src="/Group 255.png" alt="" className="mt-[136px]"/>
-        
+          <p
+            className={` ${lato.className} text-[#8A8FB9] text-[12px] lg:text-[16px] font-normal leading-[25.6px] text-left mb-[23px] mt-[45px]`}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Velit dapibus est, nunc, montes, lacus consequat integer
+            viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec
+            vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Velit dapibus est, nunc,
+          </p>
+
+          <div className="flex w-full justify-between mt-[51px] flex-wrap ">
+            <img src="/Group 247.png" alt="--" />
+            <img src="/Group 248.png" alt="--" />
+            <img src="/Group 249.png" alt="--" />
+            <img src="/Group 250.png" alt="--" />
+          </div>
+          <p
+            className={` ${lato.className} text-[#8A8FB9] text-[12px] lg:text-[16px] font-normal leading-[25.6px] text-left mt-[44px]`}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Velit dapibus est, nunc, montes, lacus consequat integer
+            viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec
+            vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Velit dapibus est, nunc,
+          </p>
+          <p
+            className={` ${lato.className} text-[#8A8FB9] text-[12px] lg:text-[16px] font-normal leading-[25.6px] text-left lg:w-[871px] mt-[32px]`}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Velit dapibus est, nunc, montes, lacus consequat integer
+            viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec
+            vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Velit dapibus est, nunc,
+          </p>
+
+          <div className="lg:w-full flex justify-center mt-[59px]">
+            <img src="/Group 213.png" alt="--" />
+          </div>
+          <img src="/Group 264.png" alt="--" className="mt-[27px]" />
+          <img src="/Group 78.png" alt="-" className="mt-[111px]" />
+          <img src="/Group 79.png" alt="-" />
+          <img src="/Group 255.png" alt="" className="mt-[136px]" />
         </div>
-        
-        <div className="mt-[125px] ml-[58px]">
+
+        <div className="mt-[125px] ml-[0px] 2xl:ml-[58px]">
           <h3 className="text-[22px] leading-[25.78px] text-left text-[#151875] font-semibold">
             Search
           </h3>
@@ -275,14 +322,11 @@ toamk risusu”</p>
             </div>
           </div>
         </div>
-
       </div>
 
-      
       <div className="w-full flex justify-center mt-[107px] ">
         <img src="/image 1174.png" alt="-" />
       </div>
-      </div>
-
+    </div>
   );
 }
