@@ -14,13 +14,13 @@ export default function DiscountSec() {
         Discount Item
       </h1>
       <ul
-        className={`${lato.className} flex gap-14 justify-center text-[14px] lg:text-[18px] font-normal mt-[19px] text-[#151875]`}
+        className={`${lato.className} flex md:gap-14 gap-4 justify-center text-[14px] lg:text-[18px] font-normal mt-[19px] text-[#151875]`}
       >
         <li className="text-[#FB2E86] underline ">Wood Chair</li>
         <li>Plastice Chair</li>
         <li>Sofa Collection</li>
       </ul>
-      <div className="flex flex-col justify-center items-center  xl:block">
+      <div className="flex flex-col justify-center items-center  xl:block p-4">
         <div>
           <h1 className="text-[24px] lg:text-[35px] flex font-bold mt-[116px] leading-[49.22px] text-left underline-offset-[0.1em] text-[#151875] tracking-[0.015em] decoration-skip-ink-auto">
             20% Discount Of All Products

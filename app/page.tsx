@@ -31,9 +31,12 @@ export default function Home() {
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <div className="flex flex-col items-center text-center">
-              <h1 className="text-[#151875] font-bold text-[26px] xl:text-[35px] leading-[54.25px] tracking-[0.015em]">
-                Get Latest Update By Subscribing <br />
-                Our Newsletter
+              <h1 className="text-[#151875] font-bold text-[20px] md:text-[26px] xl:text-[35px] leading-[54.25px] tracking-[0.015em] p-4">
+                Get Latest Update By Subscribing
+                <span className="hidden lg:inline">
+                  <br />
+                </span>
+                {" "} Our Newsletter
               </h1>
             </div>
           </div>

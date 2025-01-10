@@ -2,7 +2,7 @@ import BlogsCard from "./BlogCard";
 
 export default function BlogsSec() {
   return (
-    <div className="mb-[115px]">
+    <div className="mb-[115px] p-4">
       <h1 className="text-[30px] xl:text-[42px] flex justify-center mt-[129px] leading-[49.22px] text-left font-bold underline-offset-[0.1em] text-[#151875]">
         Leatest Blog
       </h1>

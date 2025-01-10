@@ -11,11 +11,11 @@ export default function AboutUs() {
         heading="About Us"
         subheading="About Us"
       />
-      <div className="flex gap-2 lg:gap-[30px] lg:mt-[122px] justify-center ">
+      <div className="flex gap-2 lg:gap-[30px] lg:mt-[122px] justify-center md:flex flex-wrap">
         <img
           src="/Group 73.png"
           alt="--"
-          className="w-[180px] h-[120px] lg:w-[570px] lg:h-[409px] mt-[38px] lg:mt-0"
+          className="w-[180px] h-[auto] lg:w-[570px] mt-[38px] lg:mt-0"
         />
 
         <div className="flex flex-col justify-center">
